@@ -22,7 +22,7 @@
 }
 ```
 ```html
-<!-- body 안 -->
+<!-- body 내부 -->
 
 <h1 id="hp">HP: 3</h1>
 <div class="background">
