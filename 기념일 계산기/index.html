@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>기념일 계산기</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="container">
+    <section class="photos">
+      <img id="boy" src="./images/boy.png" alt="boy" />
+      <img id="heart" src="./images/heart.png" alt="heart" />
+      <img id="girl" src="./images/girl.png" alt="girl" />
+    </section>
+    <div
+      class="container d-flex flex-column justify-content-center align-items-center mt-3"
+    >
+      <h3>철수♥영희</h3>
+      <h3 id="love">0일째</h3>
+      <h4 class="date">2020.5.28</h4>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.6.4.min.js"
+      integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      let now = new Date();
+      let start = new Date("2020.5.28");
+
+      let timeDiff = now.getTime() - start.getTime();
+      let day = Math.floor(timeDiff / (1000 * 60 * 60 * 24) + 1);
+      $("#love").text(day + "일째");
+    </script>
+  </body>
+</html>
