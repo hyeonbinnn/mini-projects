@@ -1,9 +1,6 @@
 * {
   color: #333333;
 }
-p {
-  margin-bottom: 1px;
-}
 .photos {
   margin-top: 50px;
   display: flex;
@@ -38,11 +35,18 @@ p {
 .title {
   display: flex;
   align-items: center;
+  font-weight: 600;
 }
 .days-left {
   text-align: right;
+  font-weight: 600;
 }
 .date {
   text-align: right;
   color: #a0a0a0;
+  margin-bottom: 0;
+  font-weight: 600;
+}
+.container h3 {
+  font-weight: 600;
 }
