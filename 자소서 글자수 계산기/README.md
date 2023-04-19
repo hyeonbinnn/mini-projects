@@ -1,6 +1,9 @@
 ## 1. 자소서 글자수 계산기
-![preview](https://user-images.githubusercontent.com/117449788/232546932-a1c68f92-06da-4001-a1c6-4aec80a0c27e.png)
-<br><br>
+<br>
+<p align = "center">
+<img src = "https://user-images.githubusercontent.com/117449788/232546932-a1c68f92-06da-4001-a1c6-4aec80a0c27e.png">
+</p>
+<br>
 
 - 자바스크립트를 이용해 원하는 값을 불러오기  
 ```javascript
