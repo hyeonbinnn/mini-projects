@@ -1,5 +1,8 @@
 ## 1. 미니 스타크래프트
-![preview](https://user-images.githubusercontent.com/117449788/232533729-956142d4-4c8a-4b1d-8a1f-56f0c1babadf.png)
+<p align = "center">
+<img src = "https://user-images.githubusercontent.com/117449788/232533729-956142d4-4c8a-4b1d-8a1f-56f0c1babadf.png">
+</p>
+<br>
 
 ### 게임 규칙
 1) 왼쪽 저그 종족 -> 드론
