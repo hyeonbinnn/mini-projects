@@ -1,5 +1,7 @@
 ## 1. 기념일 계산기
-![preview](https://user-images.githubusercontent.com/117449788/233090980-927810ae-a7ef-4812-bf6d-5caa0ed4dca3.png)
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/117449788/233092131-8df94493-4aba-4e8c-9d07-4e5b54b52fac.png">
+</p>
 
 ### 우리 사귄지 며칠째?
 ```bash
