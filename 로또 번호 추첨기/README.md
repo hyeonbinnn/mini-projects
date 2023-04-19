@@ -1,5 +1,7 @@
 ## 1. 로또 번호 추첨기
-![preview](https://user-images.githubusercontent.com/117449788/232545940-fbb0fa42-f340-4db8-b3d6-6cf18d8fb821.png)
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/117449788/232545940-fbb0fa42-f340-4db8-b3d6-6cf18d8fb821.png">
+</p>
 <br>
 
 ### 공 1개부터 뽑아보자
