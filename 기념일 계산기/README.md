@@ -1,5 +1,6 @@
 ## 1. 기념일 계산기
-![preview](https://user-images.githubusercontent.com/117449788/233088408-edcf0d05-9f4e-457a-99d9-9d9820fef8f0.png)  
+![preview](https://user-images.githubusercontent.com/117449788/233090980-927810ae-a7ef-4812-bf6d-5caa0ed4dca3.png)
+
 ### 우리 사귄지 며칠째?
 ```bash
 만난 밀리초 = 오늘.getTime() - 사귄날.getTime()
