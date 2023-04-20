@@ -1,9 +1,11 @@
 ## 1. 기념일 계산기
+
 <p align="center">
   <img src="https://user-images.githubusercontent.com/117449788/233092131-8df94493-4aba-4e8c-9d07-4e5b54b52fac.png">
 </p>
 
 ### 우리 사귄지 며칠째?
+
 ```bash
 만난 밀리초 = 오늘.getTime() - 사귄날.getTime()
 만난 일 = 만난 밀리초를 일로 환산
@@ -139,6 +141,8 @@ $("#valentine").text(day2 + "일 남음");
 1000일의 밀리초 = 사귄날.getTime() + 999일의.getTime()
 1000일 = new Date(1000일의 밀리초)
 ```
+
+<br>
 
 - 1000d일에 해당하는 밀리초 구하고 1000일 데이터
 
