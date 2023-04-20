@@ -14,8 +14,8 @@
 - 데이터 객체 생성 (사귄 시점을 기준으로 데이터 생성)
 
 ```javascript
-let now = new Date();
-let start = new Date("2020.5.28");
+const now = new Date();
+const start = new Date("2020.5.28");
 ```
 
 <br>
@@ -23,10 +23,10 @@ let start = new Date("2020.5.28");
 - 두 시간의 차이를 구하면 사귄날부터 오늘까지의 기간이 밀리초로 나옴
 
 ```javascript
-let now = new Date();
-let start = new Date("2020.5.28");
+const now = new Date();
+const start = new Date("2020.5.28");
 
-let timeDiff = now.getTime() - start.getTime();
+const timeDiff = now.getTime() - start.getTime();
 ```
 
 <br>
@@ -36,11 +36,11 @@ let timeDiff = now.getTime() - start.getTime();
 
 ```javascript
 // 입력
-let now = new Date();
-let start = new Date("2020.5.28");
+const now = new Date();
+const start = new Date("2020.5.28");
 
-let timeDiff = now.getTime() - start.getTime();
-let day = timeDiff / (1000 * 60 * 60 * 24) + 1;
+const timeDiff = now.getTime() - start.getTime();
+const day = timeDiff / (1000 * 60 * 60 * 24) + 1;
 console.log(day);
 
 // 출력
@@ -53,11 +53,11 @@ console.log(day);
 
 ```javascript
 // 입력
-let now = new Date();
-let start = new Date("2020.5.28");
+const now = new Date();
+const start = new Date("2020.5.28");
 
-let timeDiff = now.getTime() - start.getTime();
-let day = Math.floor(timeDiff / (1000 * 60 * 60 * 24) + 1);
+const timeDiff = now.getTime() - start.getTime();
+const day = Math.floor(timeDiff / (1000 * 60 * 60 * 24) + 1);
 console.log(day);
 
 // 출력
@@ -69,11 +69,11 @@ console.log(day);
 - html 값으로 `며칠째` 넣어주기
 
 ```javascript
-let now = new Date();
-let start = new Date("2020.5.28");
+const now = new Date();
+const start = new Date("2020.5.28");
 
-let timeDiff = now.getTime() - start.getTime();
-let day = Math.floor(timeDiff / (1000 * 60 * 60 * 24) + 1);
+const timeDiff = now.getTime() - start.getTime();
+const day = Math.floor(timeDiff / (1000 * 60 * 60 * 24) + 1);
 $("#love").text(day + "일째");
 ```
 
