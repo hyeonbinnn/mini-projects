@@ -13,7 +13,7 @@ body {
   float: left;
 }
 .img {
-  background-color: red;
+  background-color: rgb(207, 103, 103);
   width: 100vw;
   height: 500px;
   box-sizing: border-box;
