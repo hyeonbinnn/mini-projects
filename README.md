@@ -1,3 +1,2 @@
 ## 💻 mini-projects 💻
-### < JavaScript >
-### < React >
+
