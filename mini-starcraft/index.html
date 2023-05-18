@@ -2,14 +2,14 @@
 <html lang="ko">
   <head>
     <meta charset="UTF-8" />
-    <title>스타크래프트</title>
+    <title>미니 스타크래프트</title>
     <style>
       h1 {
         font-size: 25px;
       }
       .background {
         position: relative;
-        background-image: url("./images/background.png");
+        background-image: url('./images/background.png');
         background-size: 500px 330px;
         width: 500px;
         height: 330px;
@@ -54,15 +54,15 @@
 
     <script>
       let hp = 3;
-      $("#drone").click(function () {
-        $("#spit").fadeIn();
-        $("#spit").animate({ left: "+=150" });
-        $("#spit").fadeOut(function () {
-          $("#spit").css({ left: "150px" });
+      $('#drone').click(function () {
+        $('#spit').fadeIn();
+        $('#spit').animate({ left: '+=150' });
+        $('#spit').fadeOut(function () {
+          $('#spit').css({ left: '150px' });
           hp = hp - 1;
-          $("#hp").text("HP: " + hp);
+          $('#hp').text('HP: ' + hp);
           if (hp == 0) {
-            $("#bunker").fadeOut();
+            $('#bunker').fadeOut();
           }
         });
       });
