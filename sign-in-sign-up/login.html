@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>위니브 로그인</title>
+    <title>로그인</title>
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="modules_login.css" />
     <link rel="stylesheet" href="login.css" />
@@ -28,25 +28,13 @@
         <form class="form-login">
           <fieldset class="module-inp module-inp-id error">
             <label for="inpId" class="txt-hide">아이디</label>
-            <input
-              type="text"
-              class="inp-login"
-              id="inpId"
-              placeholder="아이디"
-            />
+            <input type="text" class="inp-login" id="inpId" placeholder="아이디" />
             <strong class="inp-error">아이디를 입력해주세요.</strong>
           </fieldset>
           <fieldset class="module-inp error">
-            <input
-              type="password"
-              id="inpPw"
-              class="inp-login"
-              placeholder="비밀번호"
-            />
+            <input type="password" id="inpPw" class="inp-login" placeholder="비밀번호" />
             <label for="inpPw" class="txt-hide">비밀번호</label>
-            <strong class="inp-error"
-              >아이디 혹은 비밀번호와 일치하지 않습니다.</strong
-            >
+            <strong class="inp-error">아이디 혹은 비밀번호와 일치하지 않습니다.</strong>
           </fieldset>
           <input type="checkbox" id="inpHold" class="inp-hold txt-hide" />
           <label for="inpHold" class="labl-hold">로그인 상태 유지</label>
@@ -54,9 +42,7 @@
         </form>
         <div class="link-userinfo">
           <a href="javascript:void(0);" class="link-signup">회원가입</a>
-          <a href="javascript:void(0);" class="link-lost"
-            >아이디/비밀번호 찾기</a
-          >
+          <a href="javascript:void(0);" class="link-lost">아이디/비밀번호 찾기</a>
         </div>
         <section class="cont-sns-login">
           <h4 class="txt-hide">소셜서비스로 로그인</h4>
@@ -89,19 +75,15 @@
       </section>
     </article>
     <script>
-      const targetModal = document.querySelector(".modal-login");
-      document
-        .querySelector("#appLogin .btn-login")
-        .addEventListener("click", (e) => {
-          toggleModal();
-        });
-      document
-        .querySelector(".modal-login .btn-close")
-        .addEventListener("click", (e) => {
-          toggleModal();
-        });
+      const targetModal = document.querySelector('.modal-login');
+      document.querySelector('#appLogin .btn-login').addEventListener('click', (e) => {
+        toggleModal();
+      });
+      document.querySelector('.modal-login .btn-close').addEventListener('click', (e) => {
+        toggleModal();
+      });
       function toggleModal() {
-        targetModal.classList.toggle("on");
+        targetModal.classList.toggle('on');
       }
     </script>
   </body>
