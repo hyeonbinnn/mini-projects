@@ -1,4 +1,4 @@
-## 💻 mini-projects 💻
+## 💻 JavaScript-mini-projects 💻
 
 ### date-calculator ( 날짜 계산기 )
 
