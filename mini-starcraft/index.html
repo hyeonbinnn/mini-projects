@@ -1,71 +1,44 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="ko-KR">
   <head>
     <meta charset="UTF-8" />
-    <title>미니 스타크래프트</title>
-    <style>
-      h1 {
-        font-size: 25px;
-      }
-      .background {
-        position: relative;
-        background-image: url('./images/background.png');
-        background-size: 500px 330px;
-        width: 500px;
-        height: 330px;
-      }
-      #drone {
-        position: absolute;
-        width: 100px;
-        height: 100px;
-        top: 100px;
-        left: 60px;
-      }
-      #bunker {
-        position: absolute;
-        width: 150px;
-        height: 150px;
-        top: 80px;
-        right: 20px;
-      }
-      #spit {
-        display: none;
-        position: absolute;
-        top: 140px;
-        left: 150px;
-        width: 50px;
-        height: 30px;
-        z-index: 2;
-      }
-    </style>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>초미니 스타크래프트</title>
   </head>
   <body>
-    <h1 id="hp">HP: 3</h1>
-    <div class="background">
-      <img id="drone" src="./images/drone.png" alt="drone" />
-      <img id="spit" src="./images/spit.png" alt="spit" />
-      <img id="bunker" src="./images/bunker.png" alt="bunker" />
-    </div>
+    <!-- body 내부 -->
+    <main class="container">
+      <!-- 캐릭터 체력을 나타내는 부분 -->
+      <header class="header">
+        <p id="hp">HP: 3</p>
+        <p id="hp2">HP: 3</p>
+      </header>
+      <!-- 배경 안에 들어갈 이미지 -->
+      <section class="background">
+        <img id="drone" src="./images/drone.png" alt="drone" />
+        <img id="spit" src="./images/spit.png" alt="spit" />
+        <img id="bunker" src="./images/bunker.png" alt="bunker" />
+        <img id="bullets" src="./images/bullets.png" alt="bullets" />
+        <img id="greenMonster" src="./images/greenMonster.png" alt="greenMonster" />
+        <img id="monster1" src="./images/monster1.png" alt="monster1" />
+        <img id="monster2" src="./images/monster2.png" alt="monster2" />
+        <img id="monster3" src="./images/monster3.png" alt="monster3" />
+        <img id="monster4" src="./images/monster4.png" alt="monster4" />
+        <img id="monster5" src="./images/monster5.png" alt="monster5" />
+        <img id="monster6" src="./images/monster6.png" alt="monster6" />
+      </section>
+      <!-- 게임 오버 -->
+      <div id="gameOver"><h2>GAME OVER</h2></div>
+    </main>
+
     <script
       src="https://code.jquery.com/jquery-3.6.4.min.js"
       integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
       crossorigin="anonymous"
     ></script>
 
-    <script>
-      let hp = 3;
-      $('#drone').click(function () {
-        $('#spit').fadeIn();
-        $('#spit').animate({ left: '+=150' });
-        $('#spit').fadeOut(function () {
-          $('#spit').css({ left: '150px' });
-          hp = hp - 1;
-          $('#hp').text('HP: ' + hp);
-          if (hp == 0) {
-            $('#bunker').fadeOut();
-          }
-        });
-      });
-    </script>
+    <script src="index.js"></script>
   </body>
 </html>

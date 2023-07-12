@@ -1,0 +1,140 @@
+.container {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.header {
+  font-size: 25px;
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}
+
+.background {
+  position: relative;
+  background-image: url('./images/background.png');
+  background-size: 800px 400px;
+  max-width: 800px;
+  height: 400px;
+}
+
+/* 드론 */
+#drone {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 140px;
+  left: 100px;
+}
+
+/* 벙커 */
+#bunker {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  top: 120px;
+  right: 80px;
+}
+
+/* 독침, 총알, 초록헐크 */
+#spit,
+#bullets,
+#greenMonster {
+  display: none;
+  position: absolute;
+  width: 50px;
+  height: 30px;
+  z-index: 2;
+}
+
+/* 독침 */
+#spit {
+  top: 180px;
+  left: 170px;
+}
+
+/* 총알 */
+#bullets {
+  top: 180px;
+  right: 210px;
+}
+
+/* 초록헐크 */
+#greenMonster {
+  width: 100px;
+  height: 100px;
+  top: 140px;
+  right: 100px;
+}
+
+/* 게임오버 */
+#gameOver {
+  display: none;
+  position: absolute;
+  top: 36%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 800px;
+  height: 400px;
+  text-align: center;
+  font-size: 70px;
+  color: red;
+  z-index: 3;
+}
+
+/* monster 애니메이션 */
+@keyframes bounce {
+  0% {
+    top: 150px;
+  }
+  50% {
+    top: 100px;
+  }
+  100% {
+    top: 150px;
+  }
+}
+
+#monster1,
+#monster2,
+#monster3,
+#monster4,
+#monster5,
+#monster6 {
+  display: none;
+  position: absolute;
+  width: 80px;
+  z-index: 2;
+  animation: bounce 1s infinite;
+}
+
+#monster1 {
+  top: 150px;
+  left: 120px;
+}
+
+#monster2 {
+  top: 100px;
+  left: 220px;
+}
+
+#monster3 {
+  top: 40px;
+  left: 100px;
+}
+
+#monster4 {
+  bottom: 70px;
+  left: 170px;
+}
+
+#monster5 {
+  top: 120px;
+  left: 20px;
+}
+
+#monster6 {
+  bottom: 90px;
+  left: 50px;
+}
