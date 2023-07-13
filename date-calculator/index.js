@@ -1,45 +1,30 @@
-// 1 우리 사귄지 며칠째?
+// 우리 사귄지 며칠째?
 const now = new Date();
-const start = new Date("2020.5.28");
+const start = new Date('2020-05-28');
+const dayDiff = Math.floor((now - start) / (1000 * 60 * 60 * 24) + 1);
+$('#love').text(dayDiff + '일째');
 
-const timeDiff = now.getTime() - start.getTime();
-const day = Math.floor(timeDiff / (1000 * 60 * 60 * 24) + 1);
-$("#love").text(day + "일째");
+// 기념일까지 남은 날짜?
+const valentine = new Date('2024-02-14');
+const dayDiff2 = Math.floor((valentine - now) / (1000 * 60 * 60 * 24));
+$('#valentine').text(dayDiff2 + ' days');
 
-// 2 기념일까지 남은 날짜?
-const valentine = new Date("2024-02-14");
+// 1000일은 언제?
+const thousand = new Date(start.getTime() + 999 * (1000 * 60 * 60 * 24));
+const thousandDate = `${thousand.getFullYear()}.${thousand.getMonth() + 1}.${thousand.getDate()}`;
+$('#thousand-date').text(thousandDate);
 
-const timeDiff2 = valentine.getTime() - now.getTime();
-const day2 = Math.floor(timeDiff2 / (1000 * 60 * 60 * 24) + 1);
-$("#valentine").text(day2 + "일 남음");
+// 2000일은 언제?
+const twoThousand = new Date(start.getTime() + 1999 * (1000 * 60 * 60 * 24));
+const twoThousandDate = `${twoThousand.getFullYear()}.${
+  twoThousand.getMonth() + 1
+}.${twoThousand.getDate()}`;
+$('#two-thousand-date').text(twoThousandDate);
 
-// 3 1000일은 언제?
-const ms = start.getTime() + 999 * (1000 * 60 * 60 * 24);
-const thousand = new Date(ms);
-const thousandDate =
-  thousand.getFullYear() +
-  "." +
-  (thousand.getMonth() + 1) +
-  "." +
-  thousand.getDate();
-$("#thousand-date").text(thousandDate);
+// 1000일까지 며칠 남았는지?
+const dayDiff3 = Math.floor((thousand - now) / (1000 * 60 * 60 * 24));
+$('#thousand').text(dayDiff3 + ' days');
 
-// 추가로 2000일은 언제?
-const ms2 = start.getTime() + 1999 * (1000 * 60 * 60 * 24);
-const twoThousand = new Date(ms2);
-const twoThousandDate =
-  twoThousand.getFullYear() +
-  "." +
-  (twoThousand.getMonth() + 1) +
-  twoThousand.getDate();
-$("#two-thousand-date").text(twoThousandDate);
-
-// 4 오늘부터 1000일까지 며칠 남았는기?
-const timeDiff3 = thousand.getTime() - now.getTime();
-const day3 = Math.floor(timeDiff3 / (1000 * 60 * 60 * 24) + 1);
-$("#thousand").text(day3 + "일 남음");
-
-// 추가로 2000일은 며칠 남았는가?
-const timeDiff4 = twoThousand.getTime() - now.getTime();
-const day4 = Math.floor(timeDiff4 / (2000 * 60 * 60 * 24) + 1);
-$("#two-thousand").text(day4 + "일 남음");
+// 2000일까지 며칠 남았는지?
+const dayDiff4 = Math.floor((twoThousand - now) / (1000 * 60 * 60 * 24));
+$('#two-thousand').text(dayDiff4 + ' days');

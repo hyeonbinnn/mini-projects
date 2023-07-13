@@ -1,52 +1,66 @@
 * {
   color: #333333;
 }
+
 .photos {
   margin-top: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#boy {
+
+#man,
+#women {
   width: 150px;
   height: 150px;
   object-fit: cover;
+  border: 0.5px solid #a0a0a0;
   border-radius: 50%;
-  margin-right: 30px;
+  margin: 0 auto;
 }
-#girl {
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 50%;
-  margin-left: 30px;
+
+@keyframes up-down {
+  from {
+    transform: translateY(opx);
+  }
+  to {
+    transform: translateY(-20px);
+  }
 }
+
 #heart {
   width: 50px;
   height: 50px;
+  animation: up-down 0.5s infinite ease-in-out alternate;
 }
-.gray {
-  color: #a0a0a0;
-}
+
 .special-day {
   display: flex;
   justify-content: space-between;
 }
+
+.title,
+.days-left,
+.date,
+.container h3 {
+  font-weight: 600;
+}
+
+.days-left,
+.date {
+  text-align: right;
+}
+
+.title,
+.date {
+  margin-bottom: 0;
+}
+
 .title {
   display: flex;
   align-items: center;
-  font-weight: 600;
 }
-.days-left {
-  text-align: right;
-  font-weight: 600;
-}
+
 .date {
-  text-align: right;
   color: #a0a0a0;
-  margin-bottom: 0;
-  font-weight: 600;
-}
-.container h3 {
-  font-weight: 600;
 }
