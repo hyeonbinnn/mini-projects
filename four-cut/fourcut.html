@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>four-cut</title>
+    <style>
+      /* 이서윤체 폰트 적용을 위한 코드 */
+      @font-face {
+        font-family: 'LeeSeoyun';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202-2@1.0/LeeSeoyun.woff')
+          format('woff');
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      /* body태그 자체에 css 요소 부여 */
+      body {
+        font-family: 'LeeSeoyun';
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        background-color: rgb(239, 238, 234);
+      }
+
+      .container {
+        width: 390px;
+        background-color: black;
+        height: 100%;
+      }
+
+      .photos {
+        margin-top: 30px;
+      }
+
+      .photo-frame {
+        background-color: white;
+        margin: 15px 20px;
+        height: 200px;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        cursor: pointer;
+      }
+
+      /* 하단 영역 스타일링 */
+      .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .f-title {
+        font-size: 25px;
+        font-weight: 900;
+        color: white;
+      }
+      .f-date {
+        font-size: 15px;
+        font-weight: 500;
+        color: white;
+      }
+
+      #image1 {
+        background-image: url('./img/img1.jpg');
+      }
+
+      #image2 {
+        background: center/cover no-repeat url('./img/img2.jpg');
+      }
+
+      #image3 {
+        background-image: url('./img/img3.jpg');
+      }
+
+      #image4 {
+        background-image: url('./img/img4.jpg');
+      }
+
+      .photo-description {
+        color: white;
+        background-color: black;
+        width: fit-content;
+        padding: 0 20px;
+        margin-bottom: 10px;
+        border-radius: 10px;
+        position: absolute;
+        bottom: 0;
+        transform: translate(-50%);
+        left: 50%;
+        opacity: 0;
+      }
+
+      /* opacity : 투명도를 의미, opacity는 1에 가까워 질 수록 불투명 */
+      .showText {
+        opacity: 1;
+        transition: opacity 0.5s linear;
+      }
+
+      /* transition : 나타날 때 0.5초동안 천천히 나타나는 효과를 주라는 의미 */
+      .hideText {
+        opacity: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="photos">
+        <div
+          id="image1"
+          class="photo-frame"
+          onmouseover="showText(1)"
+          onmouseout="hideText(1)"
+          onclick="alertText(1)"
+        >
+          <span id="desc1" class="photo-description"> 빨간색 땡땡이 선글라스... 난 멋져... </span>
+        </div>
+        <div
+          id="image2"
+          class="photo-frame"
+          onmouseover="showText(2)"
+          onmouseout="hideText(2)"
+          onclick="alertText(2)"
+        >
+          <span id="desc2" class="photo-description"> 이가 자라나고 있다... 큰일이다옹 </span>
+        </div>
+        <div
+          id="image3"
+          class="photo-frame"
+          onmouseover="showText(3)"
+          onmouseout="hideText(3)"
+          onclick="alertText(3)"
+        >
+          <span id="desc3" class="photo-description"> 수녀냐옹입니다. </span>
+        </div>
+        <div
+          id="image4"
+          class="photo-frame"
+          onmouseover="showText(4)"
+          onmouseout="hideText(4)"
+          onclick="alertText(4)"
+        >
+          <span id="desc4" class="photo-description"> 자기야 왜 이렇게 칭얼거려~ </span>
+        </div>
+        <div class="footer">
+          <p class="f-title">Happy Time - 냐옹시대 😼</p>
+          <p class="f-date">2022.10.13</p>
+        </div>
+      </div>
+    </div>
+    <script src="fourcut.js"></script>
+  </body>
+</html>
