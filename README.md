@@ -1,11 +1,11 @@
 # 미니 프로젝트 모음.zip
 ### [✔️ 프로필 소개 모달창 만들기](https://github.com/hyeonbinnn/mini-projects-zip/tree/main/modal)
-![image (1)](https://github.com/hyeonbinnn/react-mini-projects/assets/117449788/763584e5-f671-4485-981b-91a5d3d5f8f0)
+![modal](https://github.com/hyeonbinnn/mini-projects-zip/assets/117449788/b511dd73-237f-4623-bb7c-020b647b958c)
 <br>
 <br>
 
 ### [✔️ 1만 시간의 법칙](https://github.com/hyeonbinnn/mini-projects-zip/tree/main/10000-hour-rule) 
-![image](https://github.com/hyeonbinnn/react-mini-projects/assets/117449788/ac857c7c-22cb-4e52-8e69-186e69d0839a)
+![hour](https://github.com/hyeonbinnn/mini-projects-zip/assets/117449788/20365b61-931c-4da5-a680-d8a426b2516f)
 <br>
 <br>
 
@@ -54,7 +54,7 @@
 <br>
 <br>
 
-### [✔️ 포켓몬 캐러](https://github.com/hyeonbinnn/mini-projects-zip/tree/main/pokemon-carousel) 
+### [✔️ 포켓몬 캐러셀](https://github.com/hyeonbinnn/mini-projects-zip/tree/main/pokemon-carousel) 
 ![4](https://github.com/hyeonbinnn/mini-projects-zip/assets/117449788/e66077b8-a5ed-41a1-9f4d-e3ee476ec796)
 <br>
 <br>
